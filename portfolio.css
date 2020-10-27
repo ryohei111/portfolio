@@ -1,0 +1,295 @@
+body {
+  margin: 0;
+}
+
+
+.traiangle {
+  width: 0;
+  height: 0;
+  border-right: 770px solid transparent;
+  border-top: 220px solid  #eee;
+}
+
+ header a {
+   text-decoration: none;
+   color: rgba(0, 0, 0, 0.6);
+   font-family: cursive;
+  }
+                
+ header li {
+  list-style: none;
+ }
+
+.header-left {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+
+
+.menu  {
+  display: none;
+  /* opacity: 0; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 99;
+  background-color: rgb(243, 239, 239);
+  text-align: center;
+  height: 100vh;
+  margin:  0;
+  padding-top: 10%;
+}
+
+.menu li {
+  margin: 20px;
+}
+
+ /* ハンバーガーメニュー */
+ #container {
+   position: absolute;
+   top: 30px;
+   right: 90px;
+  display: inline-block;
+  margin: 10px;
+  /* position: relative; */
+  cursor: pointer;
+  z-index: 100;
+}
+
+
+.button {
+  position: relative;
+  width: 40px;
+  height: 40px;
+}
+
+.bar {
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: ease 0.3s;
+}
+
+.top {
+  top: 18%;
+}
+
+.middle{
+  top: 48%;
+}
+
+.bottom {
+  top: 78%;
+}
+
+.close .top {
+  transform: rotate(225deg);
+  top: 48%;
+}
+
+.close .middle{
+  opacity: 0;
+}
+
+.close .bottom {
+  transform: rotate(-225deg);
+  top: 48%;
+}
+
+.menu.active {
+  /* opacity: 1; */
+  display: block;
+}
+
+.container-text{
+  font-size: 13px;
+}
+
+.container-text.click-none{
+  opacity: 0;
+}
+
+/* 自己紹介 */
+
+
+.self-introduction .traiangle {
+  width: 0;
+  height: 0;
+  border-top: transparent;
+  border-left: 200px solid transparent;
+  border-right: 200px solid transparent;
+  border-bottom: 300px solid rgba(0, 0, 255, 0.5);
+  position: absolute;
+  top: 40%;
+  right: 30%;
+  transform: rotate(-15deg);
+  z-index: -1;
+}
+
+.self-introduction .circle {
+  position: absolute;
+  top: 30%;
+  right: 45%;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  border: 2px dotted rgb(184, 181, 181);
+  z-index: -1;
+}
+
+.tytle{
+  margin: 100px 0;
+}
+
+.tytle .heading {
+  text-align: center;
+  font-size: 40px;
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: 600;
+}
+
+.tytle .heading span {
+  display: inline-block;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.5);
+  margin: 20px 0;
+}
+
+.tytle .text{
+  width: 40%;
+  margin: 0 auto;
+  line-height: 1.8;
+  letter-spacing: 2px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 60%;
+  margin: 0 auto;
+  position: relative;
+}
+
+
+.skills .skill {
+  border: rgba(0, 0, 0, 0.7) 5px solid;
+  width: 25%;
+  text-align: center;
+  border-radius: 20%;
+  padding: 15px;
+  margin: 20px;
+  background-color: rgba(0, 0, 255, 0.1);
+}
+
+.skill p {
+  font-size: 25px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+ .square {
+  position: absolute;
+  top: 0;
+  right: -50%;
+  height: 936px;
+  width: 180px;
+  background-color: #eee;
+  transform: skewY(-15deg);
+}
+
+.skills .circle{
+  position: absolute;
+  top: -20%;
+  right: -10%;
+  width: 1000px;
+  height: 1000px;
+  border-radius: 50%;
+  border: 3px dotted rgba(0, 0, 255, 0.5);
+  z-index: -1;
+}
+
+.skill img {
+  width: 80%;
+}
+
+.HOW-TO-REQUEST {
+  text-align: center;
+  margin: 0 auto;
+}
+ 
+/* .work .circle{
+  position: relative;
+  top: 40%;
+  right: 30%;
+  width: 550px;
+  height: 550px;
+  border-radius: 50%;
+  border: 3px dotted rgba(0, 0, 255, 0.5);
+  z-index: -10;
+}
+.contact .circle{
+  position: absolute;
+  top: 400%;
+  left: 30%;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 3px dotted rgba(0, 0, 255, 0.5);
+  z-index: -10;
+} */
+
+.works {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.work {
+  display: block;
+  width: 45%;
+  text-align: center;
+  margin: 20px  10px;
+}
+
+.work a,p {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+
+
+.works img {
+  width: 100%;
+}
+
+.contact {
+  text-align: center;
+}
+
+.contact a {
+  /* text-decoration: none; */
+  color: rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+  position: relative;
+  z-index: 100;
+}
+
+footer {
+  height: 80px;
+  background-color: #eee;
+  text-align: center;
+  line-height: 80px;
+}
+
+footer span {
+  color: rgba(0, 0, 0, 0.7);
+}
+
