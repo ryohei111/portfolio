@@ -39,6 +39,10 @@
   .skills .circle {
     right: 10%;
   }
+  
+   .skill p {
+    font-size: 18px;
+  }
 
   
 }
