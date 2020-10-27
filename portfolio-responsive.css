@@ -10,7 +10,7 @@
   .traiangle {
     width: 0;
     height: 0;
-    border-right: 440px solid transparent;
+    border-right: 400px solid transparent;
     border-top: 180px solid  #eee;
   }
 
